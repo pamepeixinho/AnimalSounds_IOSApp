@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface TesteCollectionViewController : UICollectionViewController
+@interface TesteCollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>{
+    SystemSoundID soundCatID;
+    SystemSoundID soundDogID;
+    SystemSoundID soundDolphinID;
+    SystemSoundID soundElephantID;
+    SystemSoundID soundLionID;
+    SystemSoundID soundSheepID;
+}
 
 @property (strong, nonatomic) NSArray *iconNamesArray;
+@property (strong, nonatomic) NSMutableArray *soundsIDs;
 
 @end
