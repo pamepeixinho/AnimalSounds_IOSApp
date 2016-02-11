@@ -9,6 +9,7 @@
 #import "TesteCollectionViewController.h"
 #import "TesteCollectionViewCell.h"
 #import "ViewController.h"
+#import "Animal.h"
 
 
 @interface TesteCollectionViewController ()
@@ -54,7 +55,7 @@ static NSString * const reuseIdentifier = @"Cell";
 //    _soundsIDs = [NSArray arrayWithObjects: soundCatID, soundDogID, soundDolphinID, soundElephantID, soundLionID, soundSheepID, nil];
     self.collectionView.allowsMultipleSelection = NO;
 //    self.collectionView.allowsSelection = YES;
-
+    
 }
 
 - (void)didReceiveMemoryWarning {

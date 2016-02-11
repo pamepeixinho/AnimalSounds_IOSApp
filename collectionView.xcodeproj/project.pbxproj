@@ -30,6 +30,7 @@
 		4E190EF31C6D0B5300A4BBEF /* lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EED1C6D0B5300A4BBEF /* lion.wav */; };
 		4E190EF41C6D0B5300A4BBEF /* sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EEE1C6D0B5300A4BBEF /* sheep.wav */; };
 		4E190EF71C6D12CA00A4BBEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EF61C6D12CA00A4BBEF /* ViewController.m */; };
+		4E190EFB1C6D199200A4BBEF /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EFA1C6D199200A4BBEF /* Animal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		4E190EEE1C6D0B5300A4BBEF /* sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sheep.wav; sourceTree = "<group>"; };
 		4E190EF51C6D12CA00A4BBEF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E190EF61C6D12CA00A4BBEF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E190EF91C6D199200A4BBEF /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		4E190EFA1C6D199200A4BBEF /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,7 @@
 				4E190EE31C6CF41100A4BBEF /* AppDelegate */,
 				4E190EE21C6CF40500A4BBEF /* ViewController */,
 				4E190EE41C6CF41900A4BBEF /* CollectionViewCell */,
+				4E190EF81C6D196E00A4BBEF /* Model */,
 				4E190EE11C6CF3FA00A4BBEF /* Storyboard */,
 				4E190EA71C6CEA1A00A4BBEF /* Assets.xcassets */,
 				4E190EAC1C6CEA1A00A4BBEF /* Info.plist */,
@@ -236,6 +240,15 @@
 				4E190EEE1C6D0B5300A4BBEF /* sheep.wav */,
 			);
 			path = soundEffectsAnimals;
+			sourceTree = "<group>";
+		};
+		4E190EF81C6D196E00A4BBEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E190EF91C6D199200A4BBEF /* Animal.h */,
+				4E190EFA1C6D199200A4BBEF /* Animal.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +399,7 @@
 				4E190ED41C6CEB1800A4BBEF /* TesteCollectionViewCell.m in Sources */,
 				4E190ED11C6CEAA500A4BBEF /* TesteCollectionViewController.m in Sources */,
 				4E190EA01C6CEA1A00A4BBEF /* AppDelegate.m in Sources */,
+				4E190EFB1C6D199200A4BBEF /* Animal.m in Sources */,
 				4E190E9D1C6CEA1A00A4BBEF /* main.m in Sources */,
 				4E190EF71C6D12CA00A4BBEF /* ViewController.m in Sources */,
 			);
