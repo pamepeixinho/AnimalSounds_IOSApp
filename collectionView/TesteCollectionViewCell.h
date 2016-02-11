@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TesteCollectionViewCell.h
 //  collectionView
 //
 //  Created by Pamela Iupi Peixinho on 2/11/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TesteCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewCell;
 
 @end
-

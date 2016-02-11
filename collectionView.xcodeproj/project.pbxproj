@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		4E190E9D1C6CEA1A00A4BBEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190E9C1C6CEA1A00A4BBEF /* main.m */; };
 		4E190EA01C6CEA1A00A4BBEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190E9F1C6CEA1A00A4BBEF /* AppDelegate.m */; };
-		4E190EA31C6CEA1A00A4BBEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EA21C6CEA1A00A4BBEF /* ViewController.m */; };
 		4E190EA61C6CEA1A00A4BBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EA41C6CEA1A00A4BBEF /* Main.storyboard */; };
 		4E190EA81C6CEA1A00A4BBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EA71C6CEA1A00A4BBEF /* Assets.xcassets */; };
 		4E190EAB1C6CEA1A00A4BBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EA91C6CEA1A00A4BBEF /* LaunchScreen.storyboard */; };
 		4E190EB61C6CEA1B00A4BBEF /* collectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EB51C6CEA1B00A4BBEF /* collectionViewTests.m */; };
 		4E190EC11C6CEA1B00A4BBEF /* collectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EC01C6CEA1B00A4BBEF /* collectionViewUITests.m */; };
+		4E190ED11C6CEAA500A4BBEF /* TesteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190ED01C6CEAA500A4BBEF /* TesteCollectionViewController.m */; };
+		4E190ED41C6CEB1800A4BBEF /* TesteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190ED31C6CEB1800A4BBEF /* TesteCollectionViewCell.m */; };
+		4E190EDB1C6CF18A00A4BBEF /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED51C6CF18A00A4BBEF /* cat.png */; };
+		4E190EDC1C6CF18A00A4BBEF /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED61C6CF18A00A4BBEF /* dog.png */; };
+		4E190EDD1C6CF18A00A4BBEF /* dolphin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED71C6CF18A00A4BBEF /* dolphin.png */; };
+		4E190EDE1C6CF18A00A4BBEF /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED81C6CF18A00A4BBEF /* elephant.png */; };
+		4E190EDF1C6CF18A00A4BBEF /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED91C6CF18A00A4BBEF /* lion.png */; };
+		4E190EE01C6CF18A00A4BBEF /* sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EDA1C6CF18A00A4BBEF /* sheep.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,6 @@
 		4E190E9C1C6CEA1A00A4BBEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E190E9E1C6CEA1A00A4BBEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4E190E9F1C6CEA1A00A4BBEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4E190EA11C6CEA1A00A4BBEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E190EA21C6CEA1A00A4BBEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E190EA51C6CEA1A00A4BBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E190EA71C6CEA1A00A4BBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E190EAA1C6CEA1A00A4BBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,16 @@
 		4E190EBC1C6CEA1B00A4BBEF /* collectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = collectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E190EC01C6CEA1B00A4BBEF /* collectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collectionViewUITests.m; sourceTree = "<group>"; };
 		4E190EC21C6CEA1B00A4BBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E190ECF1C6CEAA500A4BBEF /* TesteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesteCollectionViewController.h; sourceTree = "<group>"; };
+		4E190ED01C6CEAA500A4BBEF /* TesteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesteCollectionViewController.m; sourceTree = "<group>"; };
+		4E190ED21C6CEB1800A4BBEF /* TesteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesteCollectionViewCell.h; sourceTree = "<group>"; };
+		4E190ED31C6CEB1800A4BBEF /* TesteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesteCollectionViewCell.m; sourceTree = "<group>"; };
+		4E190ED51C6CF18A00A4BBEF /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		4E190ED61C6CF18A00A4BBEF /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		4E190ED71C6CF18A00A4BBEF /* dolphin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolphin.png; sourceTree = "<group>"; };
+		4E190ED81C6CF18A00A4BBEF /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
+		4E190ED91C6CF18A00A4BBEF /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		4E190EDA1C6CF18A00A4BBEF /* sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +116,11 @@
 		4E190E9A1C6CEA1A00A4BBEF /* collectionView */ = {
 			isa = PBXGroup;
 			children = (
-				4E190E9E1C6CEA1A00A4BBEF /* AppDelegate.h */,
-				4E190E9F1C6CEA1A00A4BBEF /* AppDelegate.m */,
-				4E190EA11C6CEA1A00A4BBEF /* ViewController.h */,
-				4E190EA21C6CEA1A00A4BBEF /* ViewController.m */,
-				4E190EA41C6CEA1A00A4BBEF /* Main.storyboard */,
+				4E190EE31C6CF41100A4BBEF /* AppDelegate */,
+				4E190EE21C6CF40500A4BBEF /* ViewController */,
+				4E190EE41C6CF41900A4BBEF /* CollectionViewCell */,
+				4E190EE11C6CF3FA00A4BBEF /* Storyboard */,
 				4E190EA71C6CEA1A00A4BBEF /* Assets.xcassets */,
-				4E190EA91C6CEA1A00A4BBEF /* LaunchScreen.storyboard */,
 				4E190EAC1C6CEA1A00A4BBEF /* Info.plist */,
 				4E190E9B1C6CEA1A00A4BBEF /* Supporting Files */,
 			);
@@ -117,6 +130,12 @@
 		4E190E9B1C6CEA1A00A4BBEF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E190ED51C6CF18A00A4BBEF /* cat.png */,
+				4E190ED61C6CF18A00A4BBEF /* dog.png */,
+				4E190ED71C6CF18A00A4BBEF /* dolphin.png */,
+				4E190ED81C6CF18A00A4BBEF /* elephant.png */,
+				4E190ED91C6CF18A00A4BBEF /* lion.png */,
+				4E190EDA1C6CF18A00A4BBEF /* sheep.png */,
 				4E190E9C1C6CEA1A00A4BBEF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +157,42 @@
 				4E190EC21C6CEA1B00A4BBEF /* Info.plist */,
 			);
 			path = collectionViewUITests;
+			sourceTree = "<group>";
+		};
+		4E190EE11C6CF3FA00A4BBEF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4E190EA41C6CEA1A00A4BBEF /* Main.storyboard */,
+				4E190EA91C6CEA1A00A4BBEF /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		4E190EE21C6CF40500A4BBEF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E190ECF1C6CEAA500A4BBEF /* TesteCollectionViewController.h */,
+				4E190ED01C6CEAA500A4BBEF /* TesteCollectionViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4E190EE31C6CF41100A4BBEF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4E190E9E1C6CEA1A00A4BBEF /* AppDelegate.h */,
+				4E190E9F1C6CEA1A00A4BBEF /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4E190EE41C6CF41900A4BBEF /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E190ED21C6CEB1800A4BBEF /* TesteCollectionViewCell.h */,
+				4E190ED31C6CEB1800A4BBEF /* TesteCollectionViewCell.m */,
+			);
+			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E190EAB1C6CEA1A00A4BBEF /* LaunchScreen.storyboard in Resources */,
+				4E190EE01C6CF18A00A4BBEF /* sheep.png in Resources */,
+				4E190EDC1C6CF18A00A4BBEF /* dog.png in Resources */,
 				4E190EA81C6CEA1A00A4BBEF /* Assets.xcassets in Resources */,
+				4E190EDB1C6CF18A00A4BBEF /* cat.png in Resources */,
+				4E190EDD1C6CF18A00A4BBEF /* dolphin.png in Resources */,
+				4E190EDF1C6CF18A00A4BBEF /* lion.png in Resources */,
+				4E190EDE1C6CF18A00A4BBEF /* elephant.png in Resources */,
 				4E190EA61C6CEA1A00A4BBEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E190EA31C6CEA1A00A4BBEF /* ViewController.m in Sources */,
+				4E190ED41C6CEB1800A4BBEF /* TesteCollectionViewCell.m in Sources */,
+				4E190ED11C6CEAA500A4BBEF /* TesteCollectionViewController.m in Sources */,
 				4E190EA01C6CEA1A00A4BBEF /* AppDelegate.m in Sources */,
 				4E190E9D1C6CEA1A00A4BBEF /* main.m in Sources */,
 			);
