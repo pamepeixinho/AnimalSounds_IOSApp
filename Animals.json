@@ -39,5 +39,11 @@
   "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/frog-icon.png",
   "soundPath": "Single frog call",
   "soundType": "wav"
+},
+{
+  "type": "Horse",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/horse-icon.png",
+  "soundPath": "horseneigh2",
+  "soundType": "wav"
 }
 ]
