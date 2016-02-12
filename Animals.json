@@ -6,7 +6,7 @@
 },
 {
   "type": "Dog",
-  "iconPath": "https:\/\/raw.githubusercontent.com\/pamepeixinho\/AnimalsSounds_IOSApp\/master\/Sources\/animalIcons\/dog.png",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/chihuahua-icon.png",
   "soundPath": "dogbark",
   "soundType": "wav"
 },
