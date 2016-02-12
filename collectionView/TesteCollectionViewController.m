@@ -37,22 +37,22 @@ static NSString * const reuseIdentifier = @"Cell";
                                                 @"elephant",
                                                 @"lion",
                                                 @"sheep",nil];
-    
-    NSURL *catURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"catmeow" ofType:@"wav"]];
-    NSURL *dogURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dogbark" ofType:@"wav"]];
-    NSURL *dolphinURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dolphin" ofType:@"wav"]];
-    NSURL *elephantURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Elephant bellows" ofType:@"wav"]];
-    NSURL *lionURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"lion" ofType:@"wav"]];
-    NSURL *sheepURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sheep" ofType:@"wav"]];
-    
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)catURL, &soundCatID);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)dogURL, &soundDogID);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)dolphinURL, &soundDolphinID);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)elephantURL, &soundElephantID);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)lionURL, &soundLionID);
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)sheepURL, &soundSheepID);
 
-//    _soundsIDs = [NSArray arrayWithObjects: soundCatID, soundDogID, soundDolphinID, soundElephantID, soundLionID, soundSheepID, nil];
+//    NSURL *catURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"../Sources/soundEffectsAnimals/catmeow" ofType:@"wav"]];
+//    NSURL *catURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"catmeow" ofType:@"wav"]];
+//    NSURL *dogURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dogbark" ofType:@"wav"]];
+//    NSURL *dolphinURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dolphin" ofType:@"wav"]];
+//    NSURL *elephantURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Elephant bellows" ofType:@"wav"]];
+//    NSURL *lionURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"lion" ofType:@"wav"]];
+//    NSURL *sheepURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sheep" ofType:@"wav"]];
+//    
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)catURL, &soundCatID);
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)dogURL, &soundDogID);
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)dolphinURL, &soundDolphinID);
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)elephantURL, &soundElephantID);
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)lionURL, &soundLionID);
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)sheepURL, &soundSheepID);
+
     self.collectionView.allowsMultipleSelection = NO;
 //    self.collectionView.allowsSelection = YES;
     
@@ -93,8 +93,7 @@ static NSString * const reuseIdentifier = @"Cell";
     TesteCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-    cell.imageViewCell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",[_iconNamesArray objectAtIndex:indexPath.row]]];
-    
+//    cell.imageViewCell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",[_iconNamesArray objectAtIndex:indexPath.row]]];
     return cell;
 }
 

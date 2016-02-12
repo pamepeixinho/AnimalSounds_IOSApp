@@ -12,13 +12,18 @@
 @interface Animal : NSObject
 
 @property (strong, nonatomic) NSString *typeAnimal;
-@property SystemSoundID *soundID;
 @property (strong, nonatomic) NSString *iconPath;
-//@property (strong, nonatomic) NSURL *url;
+@property (strong, nonatomic) NSString *nameSound;
+@property (strong, nonatomic) NSString *typeSound;
+
+@property (strong, nonatomic) NSURL *url;
+@property SystemSoundID *soundID;
 
 - (id)initWithtypeAnimal:(NSString *)aTypeAnimal
                 iconPath:(NSString *)aIconPath
-                 soundID:(NSURL *)aURL;
+               nameSound:(NSString *)aNameSound
+               typeSound:(NSString *)aTypeSound;
+
 
 - (id)initWithDictionary:(NSDictionary *)dic;
 

@@ -34,6 +34,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0093617555427760735" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="PgP-AZ-2SD" firstAttribute="leading" secondItem="HHF-Bf-k0T" secondAttribute="leadingMargin" constant="6" id="8Rz-ah-n3h"/>
                                     <constraint firstItem="PgP-AZ-2SD" firstAttribute="top" secondItem="HHF-Bf-k0T" secondAttribute="topMargin" constant="5" id="OZk-Yh-mRY"/>
