@@ -13,36 +13,35 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="4yW-tI-UC7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.81960784313725488" green="0.93333333333333335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="6" minimumInteritemSpacing="6" id="OxW-BE-XAb">
+                        <color key="backgroundColor" red="0.92709697172725192" green="0.98541153601204745" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OxW-BE-XAb">
                             <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" reuseIdentifier="Cell" id="HHF-Bf-k0T" customClass="TesteCollectionViewCell">
-                                <rect key="frame" x="0.0" y="64" width="150" height="150"/>
+                                <rect key="frame" x="2" y="66" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgP-AZ-2SD">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <rect key="frame" x="14" y="13" width="123" height="123"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="PgP-AZ-2SD" firstAttribute="leading" secondItem="HHF-Bf-k0T" secondAttribute="leadingMargin" constant="-8" id="8Rz-ah-n3h"/>
-                                    <constraint firstItem="PgP-AZ-2SD" firstAttribute="top" secondItem="HHF-Bf-k0T" secondAttribute="topMargin" constant="-8" id="OZk-Yh-mRY"/>
+                                    <constraint firstItem="PgP-AZ-2SD" firstAttribute="leading" secondItem="HHF-Bf-k0T" secondAttribute="leadingMargin" constant="6" id="8Rz-ah-n3h"/>
+                                    <constraint firstItem="PgP-AZ-2SD" firstAttribute="top" secondItem="HHF-Bf-k0T" secondAttribute="topMargin" constant="5" id="OZk-Yh-mRY"/>
                                     <constraint firstItem="PgP-AZ-2SD" firstAttribute="centerX" secondItem="HHF-Bf-k0T" secondAttribute="centerX" id="PJa-0M-rZp"/>
                                     <constraint firstItem="PgP-AZ-2SD" firstAttribute="centerY" secondItem="HHF-Bf-k0T" secondAttribute="centerY" id="k7x-RO-pUn"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageViewCell" destination="PgP-AZ-2SD" id="hyL-sG-phS"/>
-                                    <segue destination="n3r-pM-Heh" kind="show" identifier="showDetail" id="erL-d3-emN"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -51,7 +50,9 @@
                             <outlet property="delegate" destination="0Tu-ra-60c" id="mcs-Lo-Jlo"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Animals Sounds" id="93Q-Bs-7qQ"/>
+                    <navigationItem key="navigationItem" title="Animals Sounds" id="93Q-Bs-7qQ">
+                        <barButtonItem key="backBarButtonItem" title="Animals" id="poi-gW-Zxi"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D2k-yx-4f1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,13 +80,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="nameLabel" destination="ApE-xW-h3y" id="dxc-ap-cZ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffm-ny-awo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="280"/>
+            <point key="canvasLocation" x="1220" y="280"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="anl-uX-EbF">

@@ -31,7 +31,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Do any additional setup after loading the view.
     
-    _iconNamesArray = [NSArray arrayWithObjects:@"cat",
+    _iconNamesArray = [NSArray arrayWithObjects:@"cat1",
                                                 @"dog",
                                                 @"dolphin",
                                                 @"elephant",
@@ -65,7 +65,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 #pragma mark - Navigation
-
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
@@ -76,7 +76,7 @@ static NSString * const reuseIdentifier = @"Cell";
         detailView.name = [_iconNamesArray objectAtIndex:indexPath.row];
     }
 }
-
+*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -140,7 +140,7 @@ static NSString * const reuseIdentifier = @"Cell";
 -(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
-    float cellWidth = (screenWidth-6)/ 2.0; //Replace the divisor with the column count requirement.
+    float cellWidth = (screenWidth-14)/ 2.0; //Replace the divisor with the column count requirement.
     CGSize size = CGSizeMake(cellWidth, cellWidth);
     
     return size;

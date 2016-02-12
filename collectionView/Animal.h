@@ -14,13 +14,11 @@
 @property (strong, nonatomic) NSString *typeAnimal;
 @property SystemSoundID *soundID;
 @property (strong, nonatomic) NSString *iconPath;
-@property (strong, nonatomic) NSString *imagePath;
-@property (strong, nonatomic) NSString *descriptionAnimal;
+//@property (strong, nonatomic) NSURL *url;
 
 - (id)initWithtypeAnimal:(NSString *)aTypeAnimal
                 iconPath:(NSString *)aIconPath
-                imagePath:(NSString *)aImagePath
-                descriptionAnimal:(NSString *)aDescriptionAnimal;
+                 soundID:(NSURL *)aURL;
 
 - (id)initWithDictionary:(NSDictionary *)dic;
 

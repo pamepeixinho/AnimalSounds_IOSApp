@@ -16,12 +16,6 @@
 		4E190EC11C6CEA1B00A4BBEF /* collectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EC01C6CEA1B00A4BBEF /* collectionViewUITests.m */; };
 		4E190ED11C6CEAA500A4BBEF /* TesteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190ED01C6CEAA500A4BBEF /* TesteCollectionViewController.m */; };
 		4E190ED41C6CEB1800A4BBEF /* TesteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190ED31C6CEB1800A4BBEF /* TesteCollectionViewCell.m */; };
-		4E190EDB1C6CF18A00A4BBEF /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED51C6CF18A00A4BBEF /* cat.png */; };
-		4E190EDC1C6CF18A00A4BBEF /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED61C6CF18A00A4BBEF /* dog.png */; };
-		4E190EDD1C6CF18A00A4BBEF /* dolphin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED71C6CF18A00A4BBEF /* dolphin.png */; };
-		4E190EDE1C6CF18A00A4BBEF /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED81C6CF18A00A4BBEF /* elephant.png */; };
-		4E190EDF1C6CF18A00A4BBEF /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190ED91C6CF18A00A4BBEF /* lion.png */; };
-		4E190EE01C6CF18A00A4BBEF /* sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EDA1C6CF18A00A4BBEF /* sheep.png */; };
 		4E190EE71C6D081300A4BBEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E190EE61C6D081300A4BBEF /* AudioToolbox.framework */; };
 		4E190EEF1C6D0B5300A4BBEF /* catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EE91C6D0B5300A4BBEF /* catmeow.wav */; };
 		4E190EF01C6D0B5300A4BBEF /* dogbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EEA1C6D0B5300A4BBEF /* dogbark.wav */; };
@@ -31,6 +25,12 @@
 		4E190EF41C6D0B5300A4BBEF /* sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190EEE1C6D0B5300A4BBEF /* sheep.wav */; };
 		4E190EF71C6D12CA00A4BBEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EF61C6D12CA00A4BBEF /* ViewController.m */; };
 		4E190EFB1C6D199200A4BBEF /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E190EFA1C6D199200A4BBEF /* Animal.m */; };
+		4E190F0F1C6E0EB100A4BBEF /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F091C6E0EB100A4BBEF /* dog.png */; };
+		4E190F101C6E0EB100A4BBEF /* dolphin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F0A1C6E0EB100A4BBEF /* dolphin.png */; };
+		4E190F111C6E0EB100A4BBEF /* elephant.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F0B1C6E0EB100A4BBEF /* elephant.png */; };
+		4E190F121C6E0EB100A4BBEF /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F0C1C6E0EB100A4BBEF /* lion.png */; };
+		4E190F131C6E0EB100A4BBEF /* sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F0D1C6E0EB100A4BBEF /* sheep.png */; };
+		4E190F151C6E109100A4BBEF /* cat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F141C6E109100A4BBEF /* cat1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,12 +69,6 @@
 		4E190ED01C6CEAA500A4BBEF /* TesteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesteCollectionViewController.m; sourceTree = "<group>"; };
 		4E190ED21C6CEB1800A4BBEF /* TesteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesteCollectionViewCell.h; sourceTree = "<group>"; };
 		4E190ED31C6CEB1800A4BBEF /* TesteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TesteCollectionViewCell.m; sourceTree = "<group>"; };
-		4E190ED51C6CF18A00A4BBEF /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
-		4E190ED61C6CF18A00A4BBEF /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
-		4E190ED71C6CF18A00A4BBEF /* dolphin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolphin.png; sourceTree = "<group>"; };
-		4E190ED81C6CF18A00A4BBEF /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
-		4E190ED91C6CF18A00A4BBEF /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
-		4E190EDA1C6CF18A00A4BBEF /* sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep.png; sourceTree = "<group>"; };
 		4E190EE61C6D081300A4BBEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4E190EE91C6D0B5300A4BBEF /* catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catmeow.wav; sourceTree = "<group>"; };
 		4E190EEA1C6D0B5300A4BBEF /* dogbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogbark.wav; sourceTree = "<group>"; };
@@ -86,6 +80,12 @@
 		4E190EF61C6D12CA00A4BBEF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E190EF91C6D199200A4BBEF /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
 		4E190EFA1C6D199200A4BBEF /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		4E190F091C6E0EB100A4BBEF /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		4E190F0A1C6E0EB100A4BBEF /* dolphin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolphin.png; sourceTree = "<group>"; };
+		4E190F0B1C6E0EB100A4BBEF /* elephant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elephant.png; sourceTree = "<group>"; };
+		4E190F0C1C6E0EB100A4BBEF /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lion.png; sourceTree = "<group>"; };
+		4E190F0D1C6E0EB100A4BBEF /* sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheep.png; sourceTree = "<group>"; };
+		4E190F141C6E109100A4BBEF /* cat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,12 +219,12 @@
 		4E190EE51C6D00A000A4BBEF /* AnimalIcons */ = {
 			isa = PBXGroup;
 			children = (
-				4E190ED51C6CF18A00A4BBEF /* cat.png */,
-				4E190ED61C6CF18A00A4BBEF /* dog.png */,
-				4E190ED71C6CF18A00A4BBEF /* dolphin.png */,
-				4E190ED81C6CF18A00A4BBEF /* elephant.png */,
-				4E190ED91C6CF18A00A4BBEF /* lion.png */,
-				4E190EDA1C6CF18A00A4BBEF /* sheep.png */,
+				4E190F141C6E109100A4BBEF /* cat1.png */,
+				4E190F091C6E0EB100A4BBEF /* dog.png */,
+				4E190F0A1C6E0EB100A4BBEF /* dolphin.png */,
+				4E190F0B1C6E0EB100A4BBEF /* elephant.png */,
+				4E190F0C1C6E0EB100A4BBEF /* lion.png */,
+				4E190F0D1C6E0EB100A4BBEF /* sheep.png */,
 			);
 			name = AnimalIcons;
 			sourceTree = "<group>";
@@ -357,20 +357,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E190F121C6E0EB100A4BBEF /* lion.png in Resources */,
 				4E190EF21C6D0B5300A4BBEF /* Elephant bellows.wav in Resources */,
 				4E190EF41C6D0B5300A4BBEF /* sheep.wav in Resources */,
 				4E190EAB1C6CEA1A00A4BBEF /* LaunchScreen.storyboard in Resources */,
+				4E190F111C6E0EB100A4BBEF /* elephant.png in Resources */,
+				4E190F101C6E0EB100A4BBEF /* dolphin.png in Resources */,
 				4E190EF11C6D0B5300A4BBEF /* dolphin.wav in Resources */,
 				4E190EEF1C6D0B5300A4BBEF /* catmeow.wav in Resources */,
-				4E190EE01C6CF18A00A4BBEF /* sheep.png in Resources */,
-				4E190EDC1C6CF18A00A4BBEF /* dog.png in Resources */,
 				4E190EF01C6D0B5300A4BBEF /* dogbark.wav in Resources */,
+				4E190F131C6E0EB100A4BBEF /* sheep.png in Resources */,
 				4E190EA81C6CEA1A00A4BBEF /* Assets.xcassets in Resources */,
-				4E190EDB1C6CF18A00A4BBEF /* cat.png in Resources */,
-				4E190EDD1C6CF18A00A4BBEF /* dolphin.png in Resources */,
+				4E190F151C6E109100A4BBEF /* cat1.png in Resources */,
 				4E190EF31C6D0B5300A4BBEF /* lion.wav in Resources */,
-				4E190EDF1C6CF18A00A4BBEF /* lion.png in Resources */,
-				4E190EDE1C6CF18A00A4BBEF /* elephant.png in Resources */,
+				4E190F0F1C6E0EB100A4BBEF /* dog.png in Resources */,
 				4E190EA61C6CEA1A00A4BBEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

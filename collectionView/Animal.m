@@ -13,28 +13,24 @@
 @synthesize typeAnimal;
 @synthesize soundID;
 @synthesize iconPath;
-@synthesize imagePath;
-@synthesize descriptionAnimal;
 
 - (id)initWithtypeAnimal:(NSString *)aTypeAnimal
                 iconPath:(NSString *)aIconPath
-               imagePath:(NSString *)aImagePath
-       descriptionAnimal:(NSString *)aDescriptionAnimal{
+                soundID:(NSURL *)aURL{
     
     self = [super init];
     
     if(self){
         self.typeAnimal = aTypeAnimal;
         self.iconPath = aIconPath;
-        self.imagePath = aImagePath;
-        self.descriptionAnimal = aDescriptionAnimal;
+        
     }
 
     return self;
 }
 
 - (id)initWithDictionary:(NSDictionary *)dic{
-    self = [self initWithtypeAnimal:dic[@"type"] iconPath:dic[@"iconPath"] imagePath:dic[@"imagePath"] descriptionAnimal:dic[@"descriptionAnimal"]];
+//    self = [self initWithtypeAnimal:dic[@"type"] iconPath:dic[@"iconPath"] imagePath:dic[@"imagePath"] descriptionAnimal:dic[@"descriptionAnimal"]];
     return self;
 }
 
