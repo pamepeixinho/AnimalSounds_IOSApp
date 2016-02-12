@@ -45,5 +45,11 @@
   "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/horse-icon.png",
   "soundPath": "horseneigh2",
   "soundType": "wav"
+},
+{
+  "type": "Duck",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/duck-icon.png",
+  "soundPath": "duckquack",
+  "soundType": "wav"
 }
 ]
