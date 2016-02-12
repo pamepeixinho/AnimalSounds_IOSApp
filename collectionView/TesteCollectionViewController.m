@@ -74,13 +74,12 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 -(void) makeAnimalsRequest{
-    NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/pamepeixinho/AnimalsSounds_IOSApp/master/Animals.json"];
+    NSURL *url = [NSURL URLWithString:@"http://pamepeixinho.github.io/AnimalsSounds_IOSApp/Animals.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"teste");
         NSArray *jsonArray = (NSArray*) responseObject;
         for(NSDictionary *dic in jsonArray){
             Animal *animal = [[Animal alloc] initWithDictionary:dic];
@@ -89,9 +88,11 @@ static NSString * const reuseIdentifier = @"Cell";
         
         [self.collectionView reloadData];
         
-    } failure:^(AFHTTPRequestOperation * operation, NSError *error) {
+    }failure:^(AFHTTPRequestOperation * operation, NSError *error) {
+        
         NSLog(@"error = %@", error);
     }];
+
     
     [operation start];
 }
@@ -126,6 +127,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Configure the cell
 //    cell.imageViewCell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",[_iconNamesArray objectAtIndex:indexPath.row]]];
+    [cell.imageViewCell setImageWithURL:[NSURL URLWithString:[[_animalsArray objectAtIndex:indexPath.row]iconPath]]];
     return cell;
 }
 
@@ -133,30 +135,30 @@ static NSString * const reuseIdentifier = @"Cell";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
-    switch (indexPath.row) {
-        case 0:
+    AudioServicesPlaySystemSound([[_animalsArray objectAtIndex:indexPath.row] soundID]);
+    
+//    switch (indexPath.row) {
+//        case 0:
 //            AudioServicesPlaySystemSound(soundCatID);
-            break;
-        case 1:
+//            break;
+//        case 1:
 //            AudioServicesPlaySystemSound(soundDogID);
-            break;
-        case 2:
+//            break;
+//        case 2:
 //            AudioServicesPlaySystemSound(soundDolphinID);
-            break;
-        case 3:
+//            break;
+//        case 3:
 //            AudioServicesPlaySystemSound(soundElephantID);
-            break;
-        case 4:
+//            break;
+//        case 4:
 //            AudioServicesPlaySystemSound(soundLionID);
-            break;
-        case 5:
+//            break;
+//        case 5:
 //            AudioServicesPlaySystemSound(soundSheepID);
-            break;
-            
-            
-        default:
-            break;
-    }
+//            break;
+//        default:
+//            break;
+//    }
 }
 
 // Uncomment this method to specify if the specified item should be highlighted during tracking

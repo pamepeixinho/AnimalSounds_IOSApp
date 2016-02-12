@@ -30,7 +30,9 @@
         self.nameSound = aNameSound;
         self.typeSound = aTypeSound;
         self.url = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:self.nameSound ofType:typeSound]];
-        AudioServicesCreateSystemSoundID((__bridge CFURLRef)self.url, self.soundID);
+        SystemSoundID temp;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)self.url, &temp);
+        self.soundID = temp;
     }
 
     return self;

@@ -17,7 +17,7 @@
 @property (strong, nonatomic) NSString *typeSound;
 
 @property (strong, nonatomic) NSURL *url;
-@property SystemSoundID *soundID;
+@property SystemSoundID soundID;
 
 - (id)initWithtypeAnimal:(NSString *)aTypeAnimal
                 iconPath:(NSString *)aIconPath
