@@ -38,7 +38,7 @@
 
 - (id)initWithDictionary:(NSDictionary *)dic{
 //    self = [self initWithtypeAnimal:dic[@"type"] iconPath:dic[@"iconPath"] imagePath:dic[@"imagePath"] descriptionAnimal:dic[@"descriptionAnimal"]];
-//    self = [self initWithtypeAnimal:dic[@"type"] iconPath:<#(NSString *)#> nameSound:<#(NSString *)#> typeSound:<#(NSString *)#>];
+    self = [self initWithtypeAnimal:dic[@"type"] iconPath:dic[@"iconPath"] nameSound:dic[@"soundPath"] typeSound:dic[@"soundType"]];
     return self;
 }
 

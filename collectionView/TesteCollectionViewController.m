@@ -10,6 +10,8 @@
 #import "TesteCollectionViewCell.h"
 #import "ViewController.h"
 #import "Animal.h"
+#import <AFNetworking.h>
+#import <UIImageView+AFNetworking.h>
 
 
 @interface TesteCollectionViewController ()
@@ -31,12 +33,14 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Do any additional setup after loading the view.
     
-    _iconNamesArray = [NSArray arrayWithObjects:@"cat1",
-                                                @"dog",
-                                                @"dolphin",
-                                                @"elephant",
-                                                @"lion",
-                                                @"sheep",nil];
+    
+    //BEFORE -------
+//    _iconNamesArray = [NSArray arrayWithObjects:@"cat1",
+//                                                @"dog",
+//                                                @"dolphin",
+//                                                @"elephant",
+//                                                @"lion",
+//                                                @"sheep",nil];
 
 //    NSURL *catURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"../Sources/soundEffectsAnimals/catmeow" ofType:@"wav"]];
 //    NSURL *catURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"catmeow" ofType:@"wav"]];
@@ -52,7 +56,12 @@ static NSString * const reuseIdentifier = @"Cell";
 //    AudioServicesCreateSystemSoundID((__bridge CFURLRef)elephantURL, &soundElephantID);
 //    AudioServicesCreateSystemSoundID((__bridge CFURLRef)lionURL, &soundLionID);
 //    AudioServicesCreateSystemSoundID((__bridge CFURLRef)sheepURL, &soundSheepID);
+    //---------------
 
+    _animalsArray = [[NSMutableArray alloc] init];
+    
+    [self makeAnimalsRequest];
+    
     self.collectionView.allowsMultipleSelection = NO;
 //    self.collectionView.allowsSelection = YES;
     
@@ -63,6 +72,29 @@ static NSString * const reuseIdentifier = @"Cell";
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void) makeAnimalsRequest{
+    NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/pamepeixinho/AnimalsSounds_IOSApp/master/Animals.json"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    operation.responseSerializer = [AFJSONResponseSerializer serializer];
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"teste");
+        NSArray *jsonArray = (NSArray*) responseObject;
+        for(NSDictionary *dic in jsonArray){
+            Animal *animal = [[Animal alloc] initWithDictionary:dic];
+            [_animalsArray addObject:animal];
+        }
+        
+        [self.collectionView reloadData];
+        
+    } failure:^(AFHTTPRequestOperation * operation, NSError *error) {
+        NSLog(@"error = %@", error);
+    }];
+    
+    [operation start];
+}
 
 #pragma mark - Navigation
 /*
@@ -86,7 +118,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _iconNamesArray.count;
+    return _animalsArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -103,22 +135,22 @@ static NSString * const reuseIdentifier = @"Cell";
 
     switch (indexPath.row) {
         case 0:
-            AudioServicesPlaySystemSound(soundCatID);
+//            AudioServicesPlaySystemSound(soundCatID);
             break;
         case 1:
-            AudioServicesPlaySystemSound(soundDogID);
+//            AudioServicesPlaySystemSound(soundDogID);
             break;
         case 2:
-            AudioServicesPlaySystemSound(soundDolphinID);
+//            AudioServicesPlaySystemSound(soundDolphinID);
             break;
         case 3:
-            AudioServicesPlaySystemSound(soundElephantID);
+//            AudioServicesPlaySystemSound(soundElephantID);
             break;
         case 4:
-            AudioServicesPlaySystemSound(soundLionID);
+//            AudioServicesPlaySystemSound(soundLionID);
             break;
         case 5:
-            AudioServicesPlaySystemSound(soundSheepID);
+//            AudioServicesPlaySystemSound(soundSheepID);
             break;
             
             
