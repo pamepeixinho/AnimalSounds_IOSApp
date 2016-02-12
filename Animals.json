@@ -51,5 +51,11 @@
   "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/duck-icon.png",
   "soundPath": "duckquack",
   "soundType": "wav"
+},
+{
+  "type": "Turkey",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/turkey-icon.png",
+  "soundPath": "turkey",
+  "soundType": "wav"
 }
 ]
