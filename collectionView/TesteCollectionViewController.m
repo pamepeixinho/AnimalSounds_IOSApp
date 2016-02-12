@@ -32,31 +32,6 @@ static NSString * const reuseIdentifier = @"Cell";
 //     [self.collectionView registerClass:[TesteCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
-    
-    
-    //BEFORE -------
-//    _iconNamesArray = [NSArray arrayWithObjects:@"cat1",
-//                                                @"dog",
-//                                                @"dolphin",
-//                                                @"elephant",
-//                                                @"lion",
-//                                                @"sheep",nil];
-
-//    NSURL *catURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"../Sources/soundEffectsAnimals/catmeow" ofType:@"wav"]];
-//    NSURL *catURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"catmeow" ofType:@"wav"]];
-//    NSURL *dogURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dogbark" ofType:@"wav"]];
-//    NSURL *dolphinURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dolphin" ofType:@"wav"]];
-//    NSURL *elephantURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Elephant bellows" ofType:@"wav"]];
-//    NSURL *lionURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"lion" ofType:@"wav"]];
-//    NSURL *sheepURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sheep" ofType:@"wav"]];
-//    
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)catURL, &soundCatID);
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)dogURL, &soundDogID);
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)dolphinURL, &soundDolphinID);
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)elephantURL, &soundElephantID);
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)lionURL, &soundLionID);
-//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)sheepURL, &soundSheepID);
-    //---------------
 
     _animalsArray = [[NSMutableArray alloc] init];
     
@@ -126,7 +101,7 @@ static NSString * const reuseIdentifier = @"Cell";
     TesteCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     // Configure the cell
-//    cell.imageViewCell.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",[_iconNamesArray objectAtIndex:indexPath.row]]];
+    [cell.layer setCornerRadius:15.5f];
     [cell.imageViewCell setImageWithURL:[NSURL URLWithString:[[_animalsArray objectAtIndex:indexPath.row]iconPath]]];
     return cell;
 }
@@ -137,28 +112,6 @@ static NSString * const reuseIdentifier = @"Cell";
 
     AudioServicesPlaySystemSound([[_animalsArray objectAtIndex:indexPath.row] soundID]);
     
-//    switch (indexPath.row) {
-//        case 0:
-//            AudioServicesPlaySystemSound(soundCatID);
-//            break;
-//        case 1:
-//            AudioServicesPlaySystemSound(soundDogID);
-//            break;
-//        case 2:
-//            AudioServicesPlaySystemSound(soundDolphinID);
-//            break;
-//        case 3:
-//            AudioServicesPlaySystemSound(soundElephantID);
-//            break;
-//        case 4:
-//            AudioServicesPlaySystemSound(soundLionID);
-//            break;
-//        case 5:
-//            AudioServicesPlaySystemSound(soundSheepID);
-//            break;
-//        default:
-//            break;
-//    }
 }
 
 // Uncomment this method to specify if the specified item should be highlighted during tracking
