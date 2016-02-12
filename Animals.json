@@ -1,6 +1,6 @@
 [{
   "type": "Cat",
-  "iconPath": "https:\/\/raw.githubusercontent.com\/pamepeixinho\/AnimalsSounds_IOSApp\/master\/Sources\/animalIcons\/cat1.png",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/cat-icon.png",
   "soundPath": "catmeow",
   "soundType": "wav"
 },
@@ -12,25 +12,25 @@
 },
 {
   "type": "Dolphin",
-  "iconPath": "https:\/\/raw.githubusercontent.com\/pamepeixinho\/AnimalsSounds_IOSApp\/master\/Sources\/animalIcons\/dolphin.png",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/dolphin-icon.png",
   "soundPath": "dolphin",
   "soundType": "wav"
 },
 {
   "type": "Elephant",
-  "iconPath": "https:\/\/raw.githubusercontent.com\/pamepeixinho\/AnimalsSounds_IOSApp\/master\/Sources\/animalIcons\/elephant.png",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/elephant.png",
   "soundPath": "Elephant bellows",
   "soundType": "wav"
 },
 {
   "type": "Lion",
-  "iconPath": "https:\/\/raw.githubusercontent.com\/pamepeixinho\/AnimalsSounds_IOSApp\/master\/Sources\/animalIcons\/lion.png",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/lion.png",
   "soundPath": "lion",
   "soundType": "wav"
 },
 {
   "type": "Sheep",
-  "iconPath": "https:\/\/raw.githubusercontent.com\/pamepeixinho\/AnimalsSounds_IOSApp\/master\/Sources\/animalIcons\/sheep.png",
+  "iconPath": "http://pamepeixinho.github.io/AnimalsSounds_IOSApp/images/AnimalsIcons/sheep-icon.png",
   "soundPath": "sheep",
   "soundType": "wav"
 }
