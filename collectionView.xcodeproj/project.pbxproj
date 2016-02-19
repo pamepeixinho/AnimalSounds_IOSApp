@@ -25,6 +25,10 @@
 		4E190F201C6E2A0B00A4BBEF /* Elephant bellows.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F1A1C6E2A0B00A4BBEF /* Elephant bellows.wav */; };
 		4E190F211C6E2A0B00A4BBEF /* lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F1B1C6E2A0B00A4BBEF /* lion.wav */; };
 		4E190F221C6E2A0B00A4BBEF /* sheep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E190F1C1C6E2A0B00A4BBEF /* sheep.wav */; };
+		4EE3AEF61C774DD300DD6206 /* Single frog call.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EE3AEF51C774DD300DD6206 /* Single frog call.wav */; };
+		4EE3AEF81C774DF600DD6206 /* horseneigh2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EE3AEF71C774DF600DD6206 /* horseneigh2.wav */; };
+		4EE3AEFA1C774E0900DD6206 /* duckquack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EE3AEF91C774E0900DD6206 /* duckquack.wav */; };
+		4EE3AEFC1C774E1E00DD6206 /* turkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EE3AEFB1C774E1E00DD6206 /* turkey.wav */; };
 		F7B0C6B0DA7B4DBFF8311D0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C79266E6ACDBF462BE72AC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,10 @@
 		4E190F1A1C6E2A0B00A4BBEF /* Elephant bellows.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Elephant bellows.wav"; sourceTree = "<group>"; };
 		4E190F1B1C6E2A0B00A4BBEF /* lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lion.wav; sourceTree = "<group>"; };
 		4E190F1C1C6E2A0B00A4BBEF /* sheep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sheep.wav; sourceTree = "<group>"; };
+		4EE3AEF51C774DD300DD6206 /* Single frog call.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Single frog call.wav"; sourceTree = "<group>"; };
+		4EE3AEF71C774DF600DD6206 /* horseneigh2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horseneigh2.wav; sourceTree = "<group>"; };
+		4EE3AEF91C774E0900DD6206 /* duckquack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = duckquack.wav; sourceTree = "<group>"; };
+		4EE3AEFB1C774E1E00DD6206 /* turkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = turkey.wav; sourceTree = "<group>"; };
 		56C79266E6ACDBF462BE72AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		69239D05D553A2EB99198AD9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1012DF26D9AF93762219C7F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +247,10 @@
 		4E190F161C6E2A0B00A4BBEF /* soundEffectsAnimals */ = {
 			isa = PBXGroup;
 			children = (
+				4EE3AEF51C774DD300DD6206 /* Single frog call.wav */,
+				4EE3AEFB1C774E1E00DD6206 /* turkey.wav */,
+				4EE3AEF91C774E0900DD6206 /* duckquack.wav */,
+				4EE3AEF71C774DF600DD6206 /* horseneigh2.wav */,
 				4E190F171C6E2A0B00A4BBEF /* catmeow.wav */,
 				4E190F181C6E2A0B00A4BBEF /* dogbark.wav */,
 				4E190F191C6E2A0B00A4BBEF /* dolphin.wav */,
@@ -358,13 +370,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EE3AEF61C774DD300DD6206 /* Single frog call.wav in Resources */,
 				4E190EAB1C6CEA1A00A4BBEF /* LaunchScreen.storyboard in Resources */,
 				4E190F221C6E2A0B00A4BBEF /* sheep.wav in Resources */,
 				4E190F1F1C6E2A0B00A4BBEF /* dolphin.wav in Resources */,
+				4EE3AEF81C774DF600DD6206 /* horseneigh2.wav in Resources */,
+				4EE3AEFC1C774E1E00DD6206 /* turkey.wav in Resources */,
 				4E190EA81C6CEA1A00A4BBEF /* Assets.xcassets in Resources */,
 				4E190F201C6E2A0B00A4BBEF /* Elephant bellows.wav in Resources */,
 				4E190F1E1C6E2A0B00A4BBEF /* dogbark.wav in Resources */,
 				4E190EA61C6CEA1A00A4BBEF /* Main.storyboard in Resources */,
+				4EE3AEFA1C774E0900DD6206 /* duckquack.wav in Resources */,
 				4E190F211C6E2A0B00A4BBEF /* lion.wav in Resources */,
 				4E190F1D1C6E2A0B00A4BBEF /* catmeow.wav in Resources */,
 			);

@@ -126,7 +126,7 @@ static NSString * const reuseIdentifier = @"Cell";
 -(CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
-    float cellWidth = (screenWidth-14)/ 2.0; //Replace the divisor with the column count requirement.
+    float cellWidth = (screenWidth-20)/ 2.0; //Replace the divisor with the column count requirement.
     CGSize size = CGSizeMake(cellWidth, cellWidth);
     
     return size;
